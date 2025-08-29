@@ -35,9 +35,7 @@ A backend REST API built with **Spring Boot** that provides authentication and C
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-
+git clone https://github.com/Shabbir108349/Hefazat-s-Backend
 ```
 
 ### Check The Health Of the Program
