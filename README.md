@@ -41,17 +41,17 @@ git clone https://github.com/Shabbir108349/Hefazat-s-Backend
 
 ```bash
 docker run -d ^
-More? -p8090:8080 ^
-More? --name hefazat ^
-More? shabbir108349/backendhefazat
+-p8090:8080 ^
+--name hefazat ^
+shabbir108349/backendhefazat
 ```
 
 ### pull the and Run the image for Mac
 ```bash
 docker run -d \
-More? -p8090:8080 \
-More? --name hefazat \
-More? shabbir108349/backendhefazat
+-p8090:8080 \
+--name hefazat \
+shabbir108349/backendhefazat
 ```
 
 ### Check The Health Of the Program
