@@ -37,6 +37,22 @@ A backend REST API built with **Spring Boot** that provides authentication and C
 ```bash
 git clone https://github.com/Shabbir108349/Hefazat-s-Backend
 ```
+### Pull and Run the image from the docker hub on Windows
+
+```bash
+docker run -d ^
+More? -p8090:8080 ^
+More? --name hefazat ^
+More? shabbir108349/backendhefazat
+```
+
+### pull the and Run the image for Mac
+```bash
+docker run -d \
+More? -p8090:8080 \
+More? --name hefazat \
+More? shabbir108349/backendhefazat
+```
 
 ### Check The Health Of the Program
 
@@ -100,7 +116,7 @@ DELETE localhost:8080/google/delete-google/{68b0b1ef1acfa0c40fcbb917}
 ```
 To delete a Google account use that link with the **objectId** of the document. you have to use the **Jwt token** to authenticate.
 
-This is all about  a google account Now we will talk about a Facebook account. <br>
+This is all about  a Google account Now we will talk about a Facebook account. <br>
 **The Facebook's operations is totally same as the Google only the difference between them on the URL** I am giving this url on the below---
 
 ### To add a facebook account's information
