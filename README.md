@@ -46,7 +46,7 @@ docker run -d ^
 shabbir108349/backendhefazat
 ```
 
-### pull the and Run the image for Mac
+### Pull and Run the image for Mac
 ```bash
 docker run -d \
 -p8090:8080 \
