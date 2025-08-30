@@ -18,7 +18,7 @@ A backend REST API built with **Spring Boot** that provides authentication and C
 - ✅ RESTful CRUD API endpoints  
 - ✅ Global exception handling  
 - ✅ MongoDB integration
-- ✅ Swagger/OpenAPI documentation  
+- ✅ Deploy on Render.com
 
 ---
 
@@ -59,12 +59,12 @@ shabbir108349/backendhefazat
 To check that the program  properly build and running successfully.
 
 ```bash
-GET  localhost:8080/public/health-check
+GET  https://hefazats-backend.onrender.com/public/health-check
 ```
 As I use Spring security , So the **health-check,signup and login** routes are expose without any authentication . But all the other routes are protected with spring security and jwt.
 ### Signup 
 ```bash
-POST  localhost:8080/public/signup
+POST  https://hefazats-backend.onrender.com/public/signup
 ```
 If you want to **signup** on this application then you have to use the signup url with proper properties like **{
     "username":"shabbir",
@@ -74,7 +74,7 @@ If you want to **signup** on this application then you have to use the signup ur
 ### Login
 
 ```bash
-POST localhost:8080/public/login
+POST https://hefazats-backend.onrender.com/public/login
 ``` 
 Now you are a part of this beautiful application , please use the **Login** url and give the proper account information at the form of a json on the request body as like **{
     "username":"shabbir",
@@ -89,7 +89,7 @@ Now I am describing about this platform one by one on the below---
 ### To add a google account's Information
 
 ```bash
-POST localhost:8080/google/add-google
+POST https://hefazats-backend.onrender.com/google/add-google
 ```
 If You want to hit the URL properly, You have to use the **JWT Token** on the authorization section  to authenticate and also give the proper details that you want to store on the database as like ---
 
@@ -105,14 +105,14 @@ on the request body.
 ### To update a google account's information
 
 ```bash
-PUT localhost:8080/google/update-google/{68b0b1ef1acfa0c40fcbb917}
+PUT https://hefazats-backend.onrender.com/google/update-google/{68b0b1ef1acfa0c40fcbb917}
 ```
 To update the information of an existing account, you can use that URL and give the updated value on URL's request body . this method also jwt token to authenticate.
 
 ### To Delete a google account's information
 
 ```bash
-DELETE localhost:8080/google/delete-google/{68b0b1ef1acfa0c40fcbb917}
+DELETE https://hefazats-backend.onrender.com/google/delete-google/{68b0b1ef1acfa0c40fcbb917}
 ```
 To delete a Google account use that link with the **objectId** of the document. you have to use the **Jwt token** to authenticate.
 
@@ -122,19 +122,19 @@ This is all about  a Google account Now we will talk about a Facebook account. <
 ### To add a facebook account's information
 
 ```bash
-POST localhost:8080/facebook/add-facebook
+POST https://hefazats-backend.onrender.com/facebook/add-facebook
 ```
 
 ### To update an existing facebook account's information
 
 ```bash
-PUT localhost:8080/facebook/update-facebook/{68b0b3881acfa0c40fcbb918}
+PUT https://hefazats-backend.onrender.com/facebook/update-facebook/{68b0b3881acfa0c40fcbb918}
 ```
 
 ### To delete an facebook account's information
 
 ```bash
-DELETE localhost:8080/facebook/delete-facebook/{68b0b3881acfa0c40fcbb918}
+DELETE https://hefazats-backend.onrender.com/facebook/delete-facebook/{68b0b3881acfa0c40fcbb918}
 ```
 
 
@@ -143,23 +143,23 @@ this url also needs the jwt token to bypass the security.
 
 ### To see the list of the google account
 ```bash
-GET localhost:8080/user/get-google-list
+GET https://hefazats-backend.onrender.com/user/get-google-list
 ```
 ### To see the list of the Facebook account
 
 ```bash
-GET localhost:8080/user/get-facebook-list
+GET https://hefazats-backend.onrender.com/user/get-facebook-list
 ```
 you can also update your current application's account information. And it is possible with the help of the given url but you have to be authenticated with the jwt token.
 
 ### To update your hefazat's account information
 ```bash
-PUT localhost:8080/user/update-user/{shabbir}
+PUT https://hefazats-backend.onrender.com/user/update-user/{shabbir}
 ```
 
 ### To delete your hefazat's account
 ```bash
-DELETE localhost:8080/user/delete-user/{shabbir}
+DELETE https://hefazats-backend.onrender.com/user/delete-user/{shabbir}
 ```
 
 **This is all about my application. I will also integrate features gradually**
